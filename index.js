@@ -27,7 +27,9 @@ app.post('/Projetos', (req, res) =>{
         req.body.id,
         req.body.chamados
     ));
-    res.send(projetos[0]);
+    //Nao esquece de colocar os return no res.send
+    //A funcao acaba aki, mas e sempre bom botar...
+    return res.send(projetos[0]);
 });
 
 
@@ -37,7 +39,7 @@ app.post('/Categorias', (req, res) =>
         req.body.name,
         req.body.descricao
     ));
-    res.send(categorias[0]);
+    return res.send(categorias[0]);
 });
 
 app.post('/Chamados', (req, res) =>{
@@ -47,24 +49,24 @@ app.post('/Chamados', (req, res) =>{
         req.body.localidade,
         req.body.categoriaId
     ));
-    res.send(projetos[0].chamados[0]);
+    return res.send(projetos[0].chamados[0]);
 });
 
 // GET ROUTES
 app.get('/', (req, res) =>{
-    res.send({msg: '4º Lab de JS. Nessa lab serão apresentados os projetos com seus chamados'});
+    return res.send({msg: '4º Lab de JS. Nessa lab serão apresentados os projetos com seus chamados'});
 });
 
 app.get('/Projetos', (req, res) =>{
-    res.send(projetos[0]);
+    return res.send(projetos[0]);
 });
 
 app.get('/Categorias', (req, res) =>{
-    res.send(categorias[0]);
+    return res.send(categorias[0]);
 });
 
 app.get('/Chamados', (req, res) =>{
-    res.send(projetos[0].chamados);
+    return res.send(projetos[0].chamados);
 });
 
 // Start Server

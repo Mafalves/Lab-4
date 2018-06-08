@@ -12,7 +12,9 @@ class Categoria
 
     setName(name)
     {
-        if(typeof (name === 'string')) 
+        //O certo e typeof() === 'algumacoisa' 
+        //Tu tava fazendo typeof(algo === 'outracoisa')
+        if(typeof(name) === 'string') 
         {
             this.name = name;
         }
@@ -20,7 +22,9 @@ class Categoria
 
     setDescricao(descricao) 
     {
-        if(typeof(descricao === 'string')) 
+        //O certo e typeof() === 'algumacoisa' 
+        //Tu tava fazendo typeof(algo === 'outracoisa')
+        if(typeof(descricao) === 'string') 
         {
             this.descricao = descricao;
         }

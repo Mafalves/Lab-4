@@ -15,6 +15,9 @@ class Chamado
 
     setAnalista(analista)
     {
+        //Nao vou corrigir esse pra tu corrigir ai
+        //O certo e typeof() === 'algumacoisa' 
+        //Tu tava fazendo typeof(algo === 'outracoisa')
         if(typeof(analista === 'string'))
         {
             this.analista = analista;
@@ -23,6 +26,9 @@ class Chamado
 
     setImpacto(impacto)
     {
+
+        //O certo e typeof() === 'algumacoisa' 
+        //Tu tava fazendo typeof(algo === 'outracoisa')
         if(typeof(impacto === 'string'))
         {
             this.impacto = impacto;
@@ -31,6 +37,8 @@ class Chamado
 
     setLocalidade(localidade)
     {
+        //O certo e typeof() === 'algumacoisa' 
+        //Tu tava fazendo typeof(algo === 'outracoisa')
         if(typeof(localidade === 'string'))
         {
             this.localidade = localidade;
