@@ -74,7 +74,6 @@ app.get('/Projetos', (req, res) =>{
     return res.send({ ...projetos });
 });
 
-
 app.get('/Categorias', (req, res) =>{
     return res.send(categorias[0]);
 });
