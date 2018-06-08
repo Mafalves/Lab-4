@@ -17,3 +17,15 @@
 
 const db = require('mongoose');
 db.connect("mongodb://admin:123abc@ds016058.mlab.com:16058/dbtest");
+
+const Analista = db.model("Analista", {
+    name: String
+});
+
+//const anal = new Analista({
+//    name: "Timão"
+//});
+
+//anal.save();
+
+console.log(Analista.find({}));
