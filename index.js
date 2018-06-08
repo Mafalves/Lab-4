@@ -10,7 +10,7 @@ const Categoria = require('./Categoria');
 const Chamado = require('./Chamado');
 const Projeto = require('./Projeto');
 
-var projetos = [];
+var projetos = [ 'Micromoney', 'Cisco', 'Ovos'];
 var categorias = [];
 var chamados = [];
 
@@ -58,8 +58,22 @@ app.get('/', (req, res) =>{
 });
 
 app.get('/Projetos', (req, res) =>{
-    return res.send(projetos[0]);
+
+    //POST - JSON
+    //req.body
+    //GET - ?key=valor (Query String)
+    //req.query
+
+        if(req.query && req.query.hasOwnProperty('filter')){
+
+            let result = projetos.filter( p => p == req.query.filter);
+
+            return res.send({ ...result });
+        }
+
+    return res.send({ ...projetos });
 });
+
 
 app.get('/Categorias', (req, res) =>{
     return res.send(categorias[0]);
