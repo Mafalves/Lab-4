@@ -23,23 +23,3 @@ projetos[0].chamados.push(
 
 console.log(projetos);
 console.log(projetos[0]);
-
-
-//Separar classes em arquivos diferente
-//Criar rotas para Categoria, Projeto e Chamados
-
-//Post Categoria
-//Criar uma categoria, Adiciona num array (categorias) e envia (resposta)
-//com o objeto criado
-
-//Post Projeto
-//Criar um projeto, adicona no array, retorna objecto criado
-
-//Post Chamado
-//Busca o chamado no array de projetos
-//Adiciona o chamado pro projeto
-//envia a responta com chamado criado
-
-//Criei GET Routes para:
-//Ver todos os projetos criados
-//Ver todos as categorias criadas
