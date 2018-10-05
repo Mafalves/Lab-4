@@ -1,0 +1,29 @@
+//RestFul API - For Starbucks Drinks
+//Drinks Model
+ - Name - String
+ - Size - Enum ()
+ - Price - Number
+
+DONE
+ //Get All Drinks - GET /drinks
+ //Get Drink by ID - GET /drinks/:id
+ //Post Drink (create) - POST /drinks
+ //Put Drink (Edit) - PUT /drinks/:id
+ //Delete Drink (Delete) - DELETE /drinks/:id
+
+
+ //Later we going to add Categories for the Drinks
+ //New Model - Categories
+  - Name
+  - Description
+
+
+
+To connect using the mongo shell:
+mongo ds030827.mlab.com:30827/tfs-sandbox -u <dbuser> -p <dbpassword>
+To connect using a driver via the standard MongoDB URI (what's this?):
+
+mongodb://<dbuser>:<dbpassword>@ds030827.mlab.com:30827/tfs-sandbox
+
+u - root
+p - root123

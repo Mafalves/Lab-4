@@ -1,0 +1,19 @@
+{
+    flag:{
+        
+    }
+}
+
+SystemType - enum ['Solar Street Light', 'Water Pump', 'Village System', ...];
+
+class CommonForm {
+
+}
+
+Soler extends CommonForm {
+    //diff
+}
+
+Water extends CommonForm {
+
+}

@@ -1,0 +1,26 @@
+//MERN - Mongo Express React Node
+
+//Node - Server
+
+//React - Client 
+
+//Mongo - mlab (MongDB Cloud) - mongoose (DB Schema)
+
+//Express - Route - Middlewares 
+
+//NPM Helper Packages
+ - passport - http://www.passportjs.org/
+ - bcrypt - For encryption passwords
+ - body-parser - Parse the JSON body sent by the client
+ - cookie-parser - Parse the Cookie sent on the HTTP Header
+ - cors - Allow communications between different domains
+ - morgan - Log service - https://github.com/expressjs/morgan
+
+---------------------------------------------------------------
+HTTP STATUS - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+
+200 - OK
+201 - CREATED
+404 - NOT FOUND
+400 - BAD REQUEST
+
